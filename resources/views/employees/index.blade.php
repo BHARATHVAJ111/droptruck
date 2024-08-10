@@ -15,7 +15,7 @@
     </div>
 </div>
 <table class="table table-bordered text-start">
-    <thead>
+    <thead class="table dark">
         <tr>
             <th>Name</th>
             <th>Email</th>

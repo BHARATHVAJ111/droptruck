@@ -236,37 +236,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script>
-// function initializeAutocomplete(inputId, hiddenInputId) {
-//     $("#" + inputId).autocomplete({
-//         source: function(request, response) {
-//             $.ajax({
-//                 url: "{{ route('locations.autocomplete') }}",
-//                 dataType: "json",
-//                 data: {
-//                     search: request.term
-//                 },
-//                 success: function(data) {
-//                     response(data.map(item => ({
-//                         label: item.district,
-//                         value: item.district,
-//                         id: item.id
-//                     })));
-//                 },
-//                 error: function(xhr, status, error) {
-//                     console.error('Error:', error);
-//                 }
-//             });
-//         },
-//         minLength: 1,
-//         select: function(event, ui) {
-//             $('#' + hiddenInputId).val(ui.item.id);
-//         }
-//     }).data("ui-autocomplete")._renderItem = function(ul, item) {
-//         return $("<li>")
-//             .append("<div style='font-size: 12px;'>" + item.label + "</div>")
-//             .appendTo(ul);
-//     };
-// }
 
 $(function() {
     // initializeAutocomplete('pickup_location', 'pickup_location_id');
